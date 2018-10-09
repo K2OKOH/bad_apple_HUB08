@@ -1,0 +1,1 @@
+ffmpeg -i "badapple.mp4" -an -vf pad="ih*2:ih:(ow-iw)/2:(oh-ih)/2",scale="64:32:flags=lanczos" -c:v rawvideo -f rawvideo -pix_fmt rgb24 "badapple_led.bin"

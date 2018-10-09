@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1539056936 source:e:\code\vs\badapple\ccode\badapple\badapple.c
+	<stdio.h>
+	<stdint.h>
+	<io.h>
+	<fcntl.h>
+
