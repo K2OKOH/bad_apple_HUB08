@@ -23,7 +23,9 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
-#include "bsp_GeneralTim.h" 
+#include "./GeneralTim/bsp_GeneralTim.h" 
+
+extern volatile uint32_t time;
 
 /** @addtogroup STM32F10x_StdPeriph_Template
   * @{

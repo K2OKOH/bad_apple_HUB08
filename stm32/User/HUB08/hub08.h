@@ -21,6 +21,22 @@
 #define OE_ENABLE		GPIO_SetBits(CTRL_GPIO_PORT, OE_GPIO_PIN);
 #define OE_DISABLE		GPIO_ResetBits(CTRL_GPIO_PORT, OE_GPIO_PIN);
 
+#define LAT_SET			GPIO_SetBits(CTRL_GPIO_PORT, LAT_GPIO_PIN);
+#define LAT_RESET		GPIO_ResetBits(CTRL_GPIO_PORT, LAT_GPIO_PIN);
+
+#define CLK_SET			GPIO_SetBits(CTRL_GPIO_PORT, CLK_GPIO_PIN);
+#define CLK_RESET		GPIO_ResetBits(CTRL_GPIO_PORT, CLK_GPIO_PIN);
+
+#define R1(a)	if (a)	\
+					GPIO_SetBits(UPDOWN_GPIO_PORT, R1_GPIO_PIN);\
+					else		\
+					GPIO_ResetBits(UPDOWN_GPIO_PORT, R1_GPIO_PIN)
+					
+#define R2(a)	if (a)	\
+					GPIO_SetBits(UPDOWN_GPIO_PORT, R2_GPIO_PIN);\
+					else		\
+					GPIO_ResetBits(UPDOWN_GPIO_PORT, R2_GPIO_PIN)
+				
 void HUB08_init(void);
 
 #endif

@@ -60,7 +60,7 @@ static void GENERAL_TIM_Mode_Config(void)
     TIM_Cmd(GENERAL_TIM, ENABLE);
 }
 
-void GENERAL_TIM_Init(void)
+void refresh_TIM_Init(void)
 {
 	GENERAL_TIM_NVIC_Config();
 	GENERAL_TIM_Mode_Config();		

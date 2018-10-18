@@ -51,7 +51,7 @@
 #endif
 /**************************º¯ÊýÉùÃ÷********************************/
 
-void GENERAL_TIM_Init(void);
+void refresh_TIM_Init(void);
 
 
 #endif	/* __BSP_GENERALTIME_H */
